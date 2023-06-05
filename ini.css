@@ -1,0 +1,31 @@
+*{
+    padding: 0px;
+    margin: 0px;
+    box-sizing: border-box;
+}
+body{
+   /* background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.4)), url("imagem/Relogio.jpg") no-repeat;*/
+    justify-content: center;
+    align-items: center;
+    background-size: cover;
+    min-height: 100vh;
+    background-color: #eee;
+    display: flex;
+}
+
+main{
+    text-align: center;
+    background-color: #fff8;
+    width: 400px;
+    height: 200px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 10px;
+    box-shadow: 0 .4rem .8rem #0005;
+}
+.principal h2{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}

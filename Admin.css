@@ -1,0 +1,278 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #eee;
+    color: #fff;
+    background-position: center;
+    background-size: cover;
+    
+}
+
+.side-bar{
+    background: rgb(0, 162, 255);
+    width: 250px;
+    height: 100vh;
+    position: fixed;
+    top: 0;
+    overflow-y: auto;
+    transition: 0.6s ease;
+    transition-property: left;
+}
+
+header{
+    background: rgb(11, 129, 202);
+}
+
+header img{
+    width: 100px;
+    margin: 15px;
+    margin-left: 70px;
+    border-radius: 50%;
+    border: 3px solid #b4b8b9;
+}
+
+.closse-btn{
+    position: absolute;
+    color: #fff;
+    font-size: 23px;
+    right: 0px;
+    margin: 15px;
+    cursor: pointer;
+}
+
+header h1{
+    text-align: center;
+    font-weight: 200;
+    font-size: 15px;
+    padding-bottom: 13px;
+    font-family: sans-serif;
+    letter-spacing: 2px;
+}
+
+.menu{
+    width: 100%; 
+    margin-top: 30px;
+}
+.menu .item{
+    position: relative;
+    cursor: pointer;
+    margin-bottom: 20px;
+}
+.menu .item a{
+    color: #fff;
+    font-size: 16px;
+    text-decoration: none;
+    display: block;
+    padding: 5px 30px;
+    line-height: 40px;
+}
+.item i{
+    margin-right: 15px;
+}
+
+.menu .item a:hover{
+    border-radius: 37px;
+    color: #1b1a1b;
+    background-color: #fff;
+    
+}
+
+.mainSection {
+    position: absolute;
+    right: 310px;
+    width: 60%;
+    max-height: 100vh;
+    justify-content: center;
+    align-items: center ;
+}
+
+.box-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-top: 10px;
+}
+
+.box-container .box {
+    height: 180px;
+    width: 200px;
+    margin-right: 70px;
+    transition: 0.2s ease;
+    background: rgba(0, 0, 0, 0.2);
+    border-radius: 23px;
+}
+
+.box-container .box h3 {
+    text-align: center;
+    color: #484848;
+    font-family: monospace;
+    font-size: 1.1rem;
+    margin-top: 10px;
+    text-transform: uppercase;
+}
+
+.box-container .box:hover {
+    background: rgb(0, 162, 255);
+    transition: 0.2s ease;
+    border: none;
+    cursor: pointer;
+    box-shadow: 10px 10px 25px 0px rgba(0, 0, 0, 0.3);
+}
+
+.box-container .box:hover h3 {
+    color: #ffffff;
+}
+@media (max-width:1100px){
+
+    .box-container .box {
+        height: 200px;
+        width: 200px;
+        margin: 1px;
+        transition: 0.2s ease;
+        background: rgba(0, 0, 0, 0.2);
+    }
+
+    .mainSection {
+        position: absolute;
+        right: 0;
+        width: 50%;
+        max-height: 100vh;
+        background: #ffffff;
+    }
+
+    main.table{
+        width: 62vw;
+        height: 50vh;
+        background-color: #fff4;
+        backdrop-filter: blur(7px);
+        box-shadow: 0 .4rem .8rem #0005;
+        border-radius: .8rem;
+        overflow: hidden;
+        margin-top: 110px;
+        color: #333;
+    }
+    
+}
+
+/* Titulo da tabela */
+.table__header h1{
+    justify-content: center;
+    text-align: center;
+}
+
+/* ajustes da tabela */
+main.table{
+    width: 62vw;
+    height: 50vh;
+    background-color: #fff4;
+    backdrop-filter: blur(7px);
+    box-shadow: 0 .4rem .8rem #0005;
+    border-radius: .8rem;
+    overflow: hidden;
+    margin-top: 110px;
+    color: #333;
+}
+
+/* Inicio da tabela */
+.table__header{
+    width: 100%;
+    height: 10%;
+    background-color: #fff4;
+    padding: .8rem 1rem;
+}
+
+/* Corpo da tabela */
+.table__body{
+    width: 95%;
+    height: 85%;
+    background-color: #fffa;
+    margin: .8rem auto;
+    border-radius: .6rem;
+    overflow: auto;
+}
+
+/* Barra de rolamento dinamica*/
+.table__body::-webkit-scrollbar{
+    width: 0.5rem;
+    height: 0.5rem;
+}
+
+/* Barra de rolagem  */
+.table__body::-webkit-scrollbar-thumb{
+    border-radius: 0.5rem;
+    background-color: #0004;
+    visibility: hidden;
+}
+
+/* Barra de rolagem visivel  */
+.table__body:hover::-webkit-scrollbar-thumb{
+    visibility: visible;
+}
+
+/* Largura da tabela*/
+table{
+    width: 100%;
+}
+
+/* Ajustes das Imagens */
+td img{
+    width: 36px;
+    height: 36px;
+    margin-right: .5rem;
+    border-radius: 50%;
+    vertical-align:middle; /* Alinha vertical*/
+}
+
+/* Ajustes do thead e tbody*/
+table, th, td{
+    text-align: left;
+    border-collapse:collapse; /* Eliminar as alineas do thead e tbody*/
+    padding: 1rem;
+}
+
+/* Justes do th do thead*/
+thead th{
+    position:sticky;
+    top: 0;
+    left: 0;
+    background-color: #c6c5c9fe;
+}
+
+/* Ajustes domtr do tbody*/
+tbody tr:nth-child(even){
+    background-color: #0000000b;
+}
+
+/* Hover do tbody no tr */
+tbody tr:hover{
+    background-color: #fff4;
+}
+
+/* Ajustes para a tela mobile*/
+@media (max-width: 1000px){
+    td:not(:first-of-type){
+       min-width: 12.1rem;
+    }
+}
+
+/* Ajustes do botao de sair*/
+.table span{
+    position: absolute;
+    margin-left: 94%;
+    color: #333;
+    height: 25px;
+    font-size: 30px;
+    font-weight: bolder;
+    cursor: pointer;
+   margin-bottom: 5px;
+    display: flex;
+}
+.table span a{
+    color:#333;
+    text-decoration: none;
+}
